@@ -102,12 +102,10 @@ for (letra of cadena) {
 */
 
 /********** FOREACH **********/
-function imprimirItems(item, index) {
-    console.log(`El item en el index ${index} es ${item}`);
-}
-
 var animales = ["perro", "gato", "gallina"];
-animales.forEach(imprimirItems);
+animales.forEach(function(item, index) {
+    console.log(`El item en el index ${index} es ${item}`);
+});
 
 /* Resultado:
 El item en el index 0 es perro
@@ -174,3 +172,8 @@ for (let número = 0; número < 5; número++) {
  2
  4
 */
+
+arreglo.forEach(miFuncion)
+function miFuncion() {
+    //...
+}
