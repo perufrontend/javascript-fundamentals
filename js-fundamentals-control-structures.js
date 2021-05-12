@@ -172,8 +172,3 @@ for (let número = 0; número < 5; número++) {
  2
  4
 */
-
-arreglo.forEach(miFuncion)
-function miFuncion() {
-    //...
-}
